@@ -4,19 +4,16 @@ Middleware for talking to your Green Mountain Grill
 The intent of this project is to create a plug and play module that can be used in any NodeJS application.  This will create a standard way for sending and receiving data to and from your grill.  
 
 ## Setup
-This package will be published in NPM so to include this into your project just do the following:
+This package will be published in Test.pypi so to include this into your project just do the following:
 ```
-npm install gmg --save
+pip install gmg
 ```
 It's not published yet, so this won't work until I feel like its ready
 ## Example
 ```
-const grill = require('gmg');
-const myGrill = new grill(IPADDRESS, PORT);
-
-myGrill.status(function(data){
- console.log(data);
-});
+from gmg import GreenMountainGrill
+myGrill = GreenMountainGrill('0.0.0.0',8080)
+print(myGrill.status)
 ```
 ## Results
 ```
@@ -35,13 +32,13 @@ This is a work in progress so not all methods are available yet.
 
 When initiating your grill, you will need the IP address of your grill, and the port which is most likely 8080.
 
-### status(callback);
+### status();
 This method will return the data from the grill and make it available within the callback function.
 
-### power(on/off,callback);
+### power(on/off) NOT IMPLEMENTED YET;
 Hopefully this will be the power control for the grill, accepting one parameter indicating either on or off, and a callback to handle what happens next.
 
-### temp(device, temp, callback);
+### temp(device, temp) NOT IMPLEMENTED YET;
 Available devices should be:
 - ```'grill'``` - This would set the temp for the grill
 - ```'probe1'``` - This would set the desired food temp for probe 1
