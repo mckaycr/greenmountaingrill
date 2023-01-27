@@ -28,7 +28,6 @@ myGrill.status(function(data){
 }
 ```
 ## Prerequisites
-- NodeJS is required
 - A Green Mountain Grill is required
 
 ## Methods
