@@ -1,7 +1,7 @@
 # Green Mountain Grill Middleware
 Middleware for talking to your Green Mountain Grill
 
-The intent of this project is to create a plug and play module that can be used in any NodeJS application.  This will create a standard way for sending and receiving data to and from your grill.  
+The intent of this project is to create a plug and play module that can be used in any python application.  This will create a standard way for sending and receiving data to and from your grill.  
 
 ## Setup
 This package will be published in Test.pypi so to include this into your project just do the following:
