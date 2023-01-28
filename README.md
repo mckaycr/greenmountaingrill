@@ -13,7 +13,8 @@ It's not published yet, so this won't work until I feel like its ready
 ```
 from gmg import GreenMountainGrill
 myGrill = GreenMountainGrill('0.0.0.0',8080)
-print(myGrill.status)
+status = myGrill.status
+print(status)
 ```
 ## Results
 ```
@@ -34,6 +35,9 @@ When initiating your grill, you will need the IP address of your grill, and the 
 
 ### status();
 This method will return the data from the grill and make it available within the callback function.
+
+### serial();
+This method will return the serial number for your grill
 
 ### power(on/off) NOT IMPLEMENTED YET;
 Hopefully this will be the power control for the grill, accepting one parameter indicating either on or off, and a callback to handle what happens next.
